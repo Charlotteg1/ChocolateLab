@@ -33,4 +33,8 @@ public class ChocolateService {
         chocolateRepository.save(chocolate);
         return chocolate;
     }
+
+    public List<Chocolate> findByCocoaPercentageGreaterThan(int percentage) {
+        return chocolateRepository.findByCocoaPercentageGreaterThan(percentage);
+    }
 }
